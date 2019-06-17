@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/schoolbus"
+        tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_marginTop="30sp"
+            android:id="@+id/startnavlayout"
+            android:clickable="true"
+            android:background="@android:drawable/list_selector_background"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            tools:targetApi="m"
+            tools:ignore="UnusedAttribute">
+        <ImageButton
+            android:id="@+id/startnavbtn"
+            android:clickable="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:foregroundGravity="center_vertical"
+            android:background="@drawable/user_profile_image_background"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            app:srcCompat="@drawable/ic_navigation_black_24dp"
+            tools:ignore="ContentDescription"
+            android:focusable="true" />
+
+        <TextView
+            android:clickable="true"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Navigation"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:focusable="true" />
+
+        </LinearLayout>
+</LinearLayout>

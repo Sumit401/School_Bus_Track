@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:keepScreenOn="true"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/stopnavigbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#fff"
+        app:fabSize="normal"
+        android:layout_margin="30sp"
+        android:layout_alignEnd="@id/mapView"
+        android:layout_alignBottom="@id/mapView"
+        android:clickable="true"
+        app:srcCompat="@mipmap/stopnav"
+        android:text="Stop Navigation"
+        tools:ignore="MissingConstraints"
+        android:focusable="true" />
+
+</RelativeLayout>
